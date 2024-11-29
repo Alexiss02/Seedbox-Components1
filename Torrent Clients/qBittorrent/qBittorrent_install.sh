@@ -216,7 +216,7 @@ After=network.target
 
 [Service]
 Type=forking
-User=$username
+User=root
 LimitNOFILE=infinity
 ExecStart=/usr/bin/qbittorrent-nox -d
 ExecStop=/usr/bin/killall -w -s 9 /usr/bin/qbittorrent-nox
